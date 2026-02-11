@@ -11,9 +11,9 @@ const NO_BUTTON_TEXTS = [
   "And panla",
   "Miss Okoronkwo-Oraike Nji eka!🫢",
   "Looking for the 'd' ehh?😏",
-  "Plot twist: that button is broken 🔧",
+  "Plot twist: this button is broken 😅",
   "Seriously? Again? 😩",
-  "Instructions unclear, click 'Yes' 🔄",
+  // "Instructions unclear, click 'Yes' 🔄",
   "You're breaking my heart here 💔😢",
   "I'll remember this betrayal 😤",
   "You're really testing my patience here 😑",
@@ -31,7 +31,7 @@ const NO_BUTTON_TEXTS = [
   "Turn up the volume for me",
   "You seeeee, you're singing it too",
   "The universe is telling you to click 'Yes' ✨",
-  "The 'Yes' button is looking really lonely 👉",
+  "The 'Yes' button is looking really lonely 🥺",
   "I'm running out of things to say 😅",
   "Last chance... maybe 👀",
   "Fine. Con dey go😑",
@@ -62,6 +62,8 @@ function Row2() {
   const moveButton = () => {
     bgMusicRef.current.pause();
     audioRef.current.play().catch(() => {});
+    audioRef.current.loop = true;
+
     const x = Math.random() * 300 - 150;
     const y = Math.random() * 200 - 300;
     setPos({ x, y });
@@ -104,7 +106,6 @@ function Row2() {
           </button>
 
           <button
-            onMouseEnter={moveButton}
             onClick={moveButton}
             style={{ transform: `translate(${pos.x}px, ${pos.y}px)` }}
             className="px-6 py-2 font-bold bg-gray-200 rounded-full border-2 border-gray-400 text-gray-600 hover:-translate-y-1 transition"

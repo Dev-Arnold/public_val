@@ -8,9 +8,9 @@ function Row1({ onScrollToRow2 }) {
 
   <section className="min-h-screen flex items-center justify-center bg-[#FDE2E4] px-6 text-center">
     <div className="max-w-2xl">
-      <h1 className="font-serif text-2xl leading-relaxed text-gray-800">
+    <h1 className="font-serif text-2xl leading-relaxed text-gray-800">
         <span className="block mb-6 text-pink-700 tracking-wide">
-          Dearest Alessia,
+          Dearest Gentle Reader,
         </span>
 
         <span className="block">
@@ -18,9 +18,15 @@ function Row1({ onScrollToRow2 }) {
           ruined — entirely by you.
         </span>
 
-        <span className="block mt-4">
-          I have tried — truly — to remain so, yet my thoughts wander always,
-          inevitably, to you.
+        <span className="block mt-2">
+          So:
+        </span>
+
+        <span className="block mt-2">
+          Roses are red, <br />
+          I'll keep this concise, <br />
+          You could say no… <br />
+          But that wouldn't be wise.
         </span>
       </h1>
 
